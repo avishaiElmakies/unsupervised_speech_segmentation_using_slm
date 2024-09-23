@@ -175,6 +175,7 @@ class EqualLengthSegmentor(Segmentor):
         return segments, sr
     
 
+# uses implementation from https://github.com/felixkreuk/UnsupSeg
 class NextFrameSegmentor(Segmentor):
 
     def __init__(self, segmentor_config) -> None:
