@@ -16,8 +16,6 @@ The script does the following steps:
 
 3. `pip install git+https://github.com/pytorch/fairseq@da8fb630880d529ab47e53381c30ddc8ad235216`
 
-4. install [textlesslib](https://github.com/facebookresearch/textlesslib)
-
 Note: you might get an error beacuse of omegaconf version. this is ok
 
 ## Preaparing Datasets

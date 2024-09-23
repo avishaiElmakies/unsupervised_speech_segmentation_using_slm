@@ -11,3 +11,4 @@ tqdm==4.66.1
 transformers==4.36.1
 wget==3.2
 speechbrain==1.0.0
+boltons==20.0.0
