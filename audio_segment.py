@@ -8,12 +8,12 @@ import torch
 
 def main():
     parser = argparse.ArgumentParser("this script segments auido files into smaller chunks.")
-    parser.add_argument('-c','--seg_config', type=str, default='config.json', help='Path to the config file for segmentation')
-    parser.add_argument('-j','--input_json', type=str, help='Path to the json file that contains the wav paths. The keys are the names of the folders. each key will have multiple sub keys (sub folders). with a wav path as the value.')
-    parser.add_argument('-o','--output_folder', type=str, help='folder to save the segmented audio files')
+    parser.add_argument('-c','--seg_config', type=str, help='Path to the config file for segmentation',required=True)
+    parser.add_argument('-j','--input_json', type=str, help='Path to the json file that contains the wav paths. The keys are the names of the folders. each key will have multiple sub keys (sub folders). with a wav path as the value.',required=True)
+    parser.add_argument('-o','--output_folder', type=str, help='folder to save the segmented audio files',required=True)
     parser.add_argument('-b','--base_path', type=str, default='../models/', help='base path for models')
     parser.add_argument("-s",'--save_params',action='store_true',help="save the params and data json to reproduce the results if needed")
-    parser.add_argument('-sa','--save_audio',action='store_true',default=False,help='bool do decide if the audio segments should be saved or not')
+    parser.add_argument('-sa','--save_audio',action='store_true',help='bool do decide if the audio segments should be saved or not')
 
     args = parser.parse_args()
 
