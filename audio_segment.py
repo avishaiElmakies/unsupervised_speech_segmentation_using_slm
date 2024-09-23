@@ -5,8 +5,6 @@ from speech_lm.segmentors import Segmentor, SegmentorFactory
 import torchaudio
 import os
 import torch
-import numpy as np
-
 
 def main():
     parser = argparse.ArgumentParser("this script segments auido files into smaller chunks.")
