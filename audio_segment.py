@@ -1,7 +1,7 @@
 import argparse
 import json
 from tqdm import tqdm
-from speech_lm.segmentor import Segmentor, SegmentorFactory
+from speech_lm.segmentors import Segmentor, SegmentorFactory
 import torchaudio
 import os
 import torch
