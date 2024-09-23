@@ -1,0 +1,4 @@
+{
+    "type":"speaker_diarization",
+    "pipeline_name":"pyannote/speaker-diarization-3.0"
+}

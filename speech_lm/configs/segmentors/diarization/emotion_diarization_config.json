@@ -1,0 +1,4 @@
+{
+    "type":"emotion_diarization",
+    "source":"speechbrain/emotion-diarization-wavlm-large"
+}

@@ -1,0 +1,13 @@
+librosa==0.10.0
+numpy==1.22.0
+pyannote.audio==3.0.0
+pyannote.core==5.0.0
+pyannote.database==5.0.1
+pyannote.metrics==3.2.1
+pyannote.pipeline==3.0.1
+scipy==1.11.4
+tqdm==4.66.1
+-e git+https://github.com/facebookresearch/textlesslib.git@ba33d669d8284b4f7bfe81e7384e83ab799fe384#egg=textless
+transformers==4.36.1
+wget==3.2
+speechbrain==1.0.0
