@@ -75,13 +75,13 @@ def concat_files(first_list,second_list,first_speaker_idx,
 
 def main():
     parser = argparse.ArgumentParser("helper script to prepare the EmoV-DB dataset for our experiments")
-    parser.add_argument('-i','--input_folder',type=str,help='path to the input folder')
-    parser.add_argument('-o','--output_folder',type=str,help='path to the output folder')
+    parser.add_argument('-i','--input_folder',type=str,help='path to the input folder',required=True)
+    parser.add_argument('-o','--output_folder',type=str,help='path to the output folder',required=True)
     parser.add_argument('-s','--seed',type=int,default=None,help='seed for the random number generator')
     parser.add_argument('-max','--max_concats',type=int,default=10,help='maximum number of combinations to create for each speaker')
     parser.add_argument('-min','--min_concats',type=int,default=2,help='minimum number of combinations to create for each speaker')
     parser.add_argument('--remove_emotions', default=None,  nargs='*', help='list of emotions to remove')
-    parser.add_argument('--num_files', type=int, help='number of files to sample from each speaker')
+    parser.add_argument('--num_files', type=int, help='number of files to sample from each speaker',required=True)
     parser.add_argument('--sample_rate', type=int,default=16000, help='resample sr')
     parser.add_argument('--remove_silence', action='store_true', help='remove silence from the audio files')
 
