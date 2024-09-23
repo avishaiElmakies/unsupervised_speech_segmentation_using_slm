@@ -22,7 +22,6 @@ def main():
 
     input_json = args.input_json
     output_folder = args.output_folder
-    bs = args.batch_size
     save_audio = args.save_audio
 
     with open(args.seg_config) as f:
