@@ -9,9 +9,9 @@ def main():
     parser = argparse.ArgumentParser("this script evaluates segmented audio files segmentation."\
                                      "should use a json file you should have a dict where each key contains another dict with a key for segmentation" \
                                     "with a list of segments. each segment should have a start and end time", "multiple files can be evaluated at once if they are in the same json")
-    parser.add_argument('-re','--reference_path', type=str, help='Path to the json file that contains the reference segmentation')
-    parser.add_argument('-hy','--hypothesis_path', type=str, help='Path to the json file that contains the predicted segmentation')
-    parser.add_argument('-m','--metrics', type=str,nargs="+", help='metrics to use for evaluation',choices=AVAILABLE_METRICS + ["all"])
+    parser.add_argument('-re','--reference_path', type=str, help='Path to the json file that contains the reference segmentation',required=True)
+    parser.add_argument('-hy','--hypothesis_path', type=str, help='Path to the json file that contains the predicted segmentation',required=True)
+    parser.add_argument('-m','--metrics', type=str,nargs="+", help='metrics to use for evaluation',choices=AVAILABLE_METRICS + ["all"],required=True)
     parser.add_argument('-p','--print_sub', action="store_true", help='print the results')
     parser.add_argument('-o','--output', type=str,default=None, help='Path to the output file if None will print to stdout')
     parser.add_argument('-ci','--confidence_interval', action="store_true", help='add confidence interval')
