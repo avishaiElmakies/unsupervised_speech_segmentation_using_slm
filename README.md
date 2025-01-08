@@ -1,5 +1,5 @@
 ##  Unsupervised Speech Segmentation: A General Approach Using Speech Language Models
-#### This repository is the official implementation for the paper "Unsupervised Speech Segmentation: A General Approach Using Speech Language Models" (link will be added in the near future)
+#### This repository is the official implementation for the paper "[Unsupervised Speech Segmentation: A General Approach Using Speech Language Models](https://arxiv.org/abs/2501.03711)" 
 
 ## Installing dependecies
 
